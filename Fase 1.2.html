@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Envío</title>
+    <!-- Añadimos Gogle Fonts para mejorar el diseño -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Enlace a CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Envío</h1>
+    </header>
+    
+    <main>
+        <!-- Sección del remitente -->
+        <section id="remitente">
+            <h2>Remitente</h2>
+            <div class="form-group">
+                <label for="nombreRemitente">Nombre:</label>
+                <input type="text" id="nombreRemitente" placeholder="Nombre del remitente">
+            </div>
+            <div class="form-group">
+                <label for="ciudadRemitente">Ciudad:</label>
+                <input type="text" id="ciudadRemitente" placeholder="Ciudad">
+            </div>
+            <div class="form-group">
+                <label for="estadoRemitente">Estado:</label>
+                <input type="text" id="estadoRemitente" placeholder="Estado">
+            </div>
+            <div class="form-group">
+                <label for="domicilioRemitente">Domicilio:</label>
+                <input type="text" id="domicilioRemitente" placeholder="Domicilio">
+            </div>
+            <div class="form-group">
+                <label for="codigoPostalRemitente">Código Postal:</label>
+                <input type="text" id="codigoPostalRemitente" placeholder="Código Postal">
+            </div>
+            <div class="form-group">
+                <label for="telefonoRemitente">Teléfono:</label>
+                <input type="tel" id="telefonoRemitente" placeholder="Teléfono">
+            </div>
+        </section>
+
+        <!-- Sección del destinatario -->
+        <section id="destinatario">
+            <h2>Destinatario</h2>
+            <div class="form-group">
+                <label for="nombreDestinatario">Nombre:</label>
+                <input type="text" id="nombreDestinatario" placeholder="Nombre del destinatario">
+            </div>
+            <div class="form-group">
+                <label for="ciudadDestinatario">Ciudad:</label>
+                <input type="text" id="ciudadDestinatario" placeholder="Ciudad">
+            </div>
+            <div class="form-group">
+                <label for="estadoDestinatario">Estado:</label>
+                <input type="text" id="estadoDestinatario" placeholder="Estado">
+            </div>
+            <div class="form-group">
+                <label for="domicilioDestinatario">Domicilio:</label>
+                <input type="text" id="domicilioDestinatario" placeholder="Domicilio">
+            </div>
+            <div class="form-group">
+                <label for="codigoPostalDestinatario">Código Postal:</label>
+                <input type="text" id="codigoPostalDestinatario" placeholder="Código Postal">
+            </div>
+            <div class="form-group">
+                <label for="telefonoDestinatario">Teléfono:</label>
+                <input type="tel" id="telefonoDestinatario" placeholder="Teléfono">
+            </div>
+        </section>
+
+        <!-- Sección de mercancía -->
+        <section id="mercancia">
+            <h2>Mercancía</h2>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" placeholder="Descripción de la mercancía">
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="text" id="peso" placeholder="Peso">
+            </div>
+            <div class="form-group">
+                <label for="largo">Largo (cm):</label>
+                <input type="text" id="largo" placeholder="Largo">
+            </div>
+            <div class="form-group">
+                <label for="ancho">Ancho (cm):</label>
+                <input type="text" id="ancho" placeholder="Ancho">
+            </div>
+            <div class="form-group">
+                <label for="alto">Alto (cm):</label>
+                <input type="text" id="alto" placeholder="Alto">
+            </div>
+            <div class="form-group">
+                <label for="fechaSalida">Fecha de Salida:</label>
+                <input type="date" id="fechaSalida">
+            </div>
+            <div class="form-group">
+                <label for="fechaLlegada">Fecha de Llegada:</label>
+                <input type="date" id="fechaLlegada">
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio de Envío:</label>
+                <input type="text" id="precio" placeholder="Precio de envío">
+            </div>
+        </section>
+
+        <!-- Botón para registrar -->
+        <button id="registrar">Registrar</button>
+
+        <!-- Tabla para mostrar registros -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Remitente</th>
+                    <th>Destinatario</th>
+                    <th>Mercancía</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Se agregarán los registros -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Formulario de Envío</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
